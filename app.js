@@ -77,11 +77,11 @@ console.log(num);
 console.log(start);
 
 for (let inc = start; inc <= num; inc++) {
-  if (!(inc % 3) && inc % 5) {
+  if (!(inc % fizzDivisor) && inc % buzzDivisor) {
     console.log(`${inc} goes FIZZ`);
-  } else if (!(inc % 5) && inc % 3) {
+  } else if (!(inc % buzzDivisor) && inc % fizzDivisor) {
     console.log(`${inc} goes BUZZ`);
-  } else if (!(inc % 5) && !(inc % 3)) {
+  } else if (!(inc % buzzDivisor) && !(inc % fizzDivisor)) {
     console.log(`${inc} goes FIZZBUZZ!!!`);
   } else {
     console.log(`${inc} is boring. Yawn.`);
